@@ -1,0 +1,25 @@
+{
+	"name": "SQLDatabaseTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedServiceAzureSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "email",
+				"type": "varchar"
+			},
+			{
+				"name": "fullName",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "AbiolaTable"
+		}
+	}
+}
