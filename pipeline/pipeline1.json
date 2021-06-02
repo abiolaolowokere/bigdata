@@ -15,8 +15,17 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"sink": {
+						"type": "AzureSqlSink"
+					},
 					"enableStaging": false
-				}
+				},
+				"outputs": [
+					{
+						"referenceName": "SQLDatabaseTable",
+						"type": "DatasetReference"
+					}
+				]
 			},
 			{
 				"name": "Lookup1",
